@@ -5,6 +5,7 @@ using EmpApi.Services;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
+using Serilog.Formatting.Json;
 using System.Reflection;
 
 
@@ -17,7 +18,7 @@ Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Override("System", LogEventLevel.Warning)    // ?? Filters out base system logs
     .MinimumLevel.Information()
     .WriteTo.Console()
-    .WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day) // daily log files
+    .WriteTo.File(new JsonFormatter(), "logs/log.json", rollingInterval: RollingInterval.Day) // JSON to file
     .CreateLogger();
 
 builder.Host.UseSerilog();
