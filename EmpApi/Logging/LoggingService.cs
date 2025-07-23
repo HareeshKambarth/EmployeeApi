@@ -11,12 +11,12 @@
 
         public void LogInformation(string message, Guid activityId)
         {
-            _logger.LogInformation("{Message} | ActivityId: {ActivityId}", message, activityId);
+            _logger.LogInformation("{Message} | ActivityId: ", message, activityId);
         }
 
         public void LogError(string message, Exception ex, Guid activityId)
         {
-            _logger.LogError(ex, "{Message} | ActivityId: {ActivityId}", message, activityId);
+            _logger.LogError(ex, "{Message} | ActivityId: ", message, activityId);
         }
     }
 }

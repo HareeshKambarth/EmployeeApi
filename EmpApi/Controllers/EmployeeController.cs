@@ -47,7 +47,7 @@ namespace EmpApi.Controllers
             {
                 //_context.Employee.Add(employee);
                 //await _context.SaveChangesAsync();
-                await _employeeService.AddEmployee(employee);
+                await _employeeService.AddEmployee(employee, activityId);
                 _Logger.LogInformation($"Adding Employee completed. Employee Id: {employee.Id}", activityId);
                 return Ok();
             }
@@ -67,7 +67,7 @@ namespace EmpApi.Controllers
             try
             {
                 //var emp = await _context.Employee.FindAsync(employee.Id);
-                await _employeeService.UpdateEmployee(employee);
+                await _employeeService.UpdateEmployee(employee, activityId);
                 //emp.Name = employee.Name;
                 //emp.Address = employee.Address;
                 //emp.Email = employee.Email;
@@ -99,7 +99,7 @@ namespace EmpApi.Controllers
                 //var emp = await _context.Employee.FindAsync(id);
                 //emp.ActiveStatus = status;
                 //await _context.SaveChangesAsync();
-                await _employeeService.UpdateEmployeeStatus(id, status);
+                await _employeeService.UpdateEmployeeStatus(id, status, activityId);
                 _Logger.LogInformation($"Update Employee Status completed. Employee Id: {id}", activityId);
                 return Ok();
             }
@@ -119,8 +119,8 @@ namespace EmpApi.Controllers
             _Logger.LogInformation("Get Employee details started.", activityId);
             try
             {
-                var emp = await _employeeService.GetEmployeebyId(id);
-
+                var emp = await _employeeService.GetEmployeebyId(id, activityId);
+                _Logger.LogInformation("Get  Employee by id services Complted.", activityId);
                 _Logger.LogInformation("Get Employee details completed.", activityId);
                 return Ok(emp);
             }
@@ -145,7 +145,7 @@ namespace EmpApi.Controllers
                 //var emp = await _context.Employee.FindAsync(id);
                 //emp.Delete = 1;
                 //await _context.SaveChangesAsync();
-                await _employeeService.DeleteEmployee(id);
+                await _employeeService.DeleteEmployee(id, activityId);
                 _Logger.LogInformation($"Soft delete Employee completed. Employee Id: {id}", activityId);
                 return Ok();
             }
@@ -166,7 +166,8 @@ namespace EmpApi.Controllers
             try
             {
                 //var employees = await _context.Employee.Where(e => e.Delete == 0).ToListAsync();
-                var employees = await _employeeService.GetAllEmployees();
+                var employees = await _employeeService.GetAllEmployees(activityId);
+                _Logger.LogInformation("Get all Employee services completed.", activityId);
                 _Logger.LogInformation("Get non deleted Employee complted.", activityId);
                 return Ok(employees);
             }

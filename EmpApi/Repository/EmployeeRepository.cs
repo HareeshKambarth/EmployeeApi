@@ -1,21 +1,33 @@
 ﻿using EmpApi.Data;
+using EmpApi.Logging;
 using EmpApi.Models;
 using Microsoft.EntityFrameworkCore;
+using EmpApi.Logging;
+
 
 namespace EmpApi.Repository
 {
     public class EmployeeRepository : IEmployeeRepository
     {
         private readonly EmpDbContext _context;
-        public EmployeeRepository(EmpDbContext context)
+        private readonly ILoggingService _Logger;
+        public EmployeeRepository(EmpDbContext context, ILoggingService Logger)
         {
             _context = context;
+            _Logger = Logger;
         }
-        public async Task AddEmployee(Employee employee)
+        string GetDeepestMessage(Exception ex)
         {
-            //_context.Employee.Add(employee);
-            //await _context.SaveChangesAsync();
-            await _context.Database.ExecuteSqlInterpolatedAsync($@"
+            while (ex.InnerException != null)
+                ex = ex.InnerException;
+            return ex.Message.Trim();
+        }
+        public async Task AddEmployee(Employee employee, Guid activityId)
+        {
+            _Logger.LogInformation("Adding Employee Repository started.", activityId);
+            try
+            {
+                await _context.Database.ExecuteSqlInterpolatedAsync($@"
         EXEC AddEmployee @Id = {employee.Id},
         @Name = {employee.Name},
         @Address = {employee.Address},
@@ -23,19 +35,25 @@ namespace EmpApi.Repository
         @RegistrationDate = {employee.RegistrationDate},
         @ActiveStatus = {employee.ActiveStatus},
         @Delete = {employee.Delete}");
+                _Logger.LogInformation("Adding Employee Repository Completed.", activityId);
+            }
+            catch (Exception ex)
+            {
+                GetDeepestMessage(ex);
+                _Logger.LogError("Exception" + ex.Message, ex, activityId);
+                throw (new Exception("Exception" + ex.Message));
+
+            }
+
         }
-        public async Task UpdateEmployee(Employee employee)
+
+        public async Task UpdateEmployee(Employee employee, Guid activityId)
         {
-            //var existingEmployee = await _context.Employee.FindAsync(employee.Id);
-            //var existingEmployee = 
-            //existingEmployee.Name = employee.Name;
-            //existingEmployee.Address = employee.Address;
-            //existingEmployee.Email = employee.Email;
-            //existingEmployee.RegistrationDate = employee.RegistrationDate;
-            //existingEmployee.ActiveStatus = employee.ActiveStatus;
-            //existingEmployee.Delete = employee.Delete;
-            //await _context.SaveChangesAsync();
-            await _context.Database.ExecuteSqlInterpolatedAsync($@"
+            _Logger.LogInformation("Updating Employee Repository started.", activityId);
+            try
+            {
+
+                await _context.Database.ExecuteSqlInterpolatedAsync($@"
         EXEC UpdateEmployee
         @Id = {employee.Id},
         @Name = {employee.Name},
@@ -44,39 +62,89 @@ namespace EmpApi.Repository
         @RegistrationDate = {employee.RegistrationDate},
         @ActiveStatus = {employee.ActiveStatus},
         @Delete = {employee.Delete}");
-        }
-        public async Task<Employee> GetEmployeeById(int id)
-        {
-            //return await _context.Employee.FindAsync(id);
-            var result = await _context.Employee
-        .FromSqlInterpolated($"EXEC GetEmployeeById @Id = {id}")
-        .AsNoTracking()
-        .ToListAsync();
+                _Logger.LogInformation("Updating Employee Repository Completed.", activityId);
+            }
+            catch (Exception ex)
+            {
+                GetDeepestMessage(ex);
+                _Logger.LogError("Exception" + ex.Message, ex, activityId);
+                throw (new Exception("Exception" + ex.Message));
 
-            return result.FirstOrDefault();
+            }
         }
-        public async Task UpdateEmployeeStatus(int id, int status)
+        public async Task<Employee> GetEmployeeById(int id, Guid activityId)
         {
-            await _context.Database.ExecuteSqlInterpolatedAsync($@"EXEC UpdateEmployeeStatus @Id={id}, @ActiveStatus = {status}");
-            //var employee = await _context.Employee.FindAsync(id);
-            //employee.ActiveStatus = status;
-            //await _context.SaveChangesAsync();
+            _Logger.LogInformation("Get  Employee Repository started.", activityId);
+            try
+            {
+
+                var result = await _context.Employee
+            .FromSqlInterpolated($"EXEC GetEmployeeById @Id = {id}")
+            .AsNoTracking()
+            .ToListAsync();
+                _Logger.LogInformation("Get  Employee Repository Completed.", activityId);
+                return result.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                GetDeepestMessage(ex);
+                _Logger.LogError("Exception" + ex.Message, ex, activityId);
+                throw (new Exception("Exception" + ex.Message));
+
+            }
         }
-        public async Task DeleteEmployee(int id)
+        public async Task UpdateEmployeeStatus(int id, int status, Guid activityId)
         {
-            //var employee = await _context.Employee.FindAsync(id);
-            //employee.Delete = 1;
-            //await _context.SaveChangesAsync();
-            await _context.Database.ExecuteSqlInterpolatedAsync($@"EXEC DeleteEmployee @id={id}");
+            _Logger.LogInformation("Update Employee Repository started.", activityId);
+            try
+            {
+                await _context.Database.ExecuteSqlInterpolatedAsync($@"EXEC UpdateEmployeeStatus @Id={id}, @ActiveStatus = {status}");
+                _Logger.LogInformation("Update Employee Repository Completed.", activityId);
+            }
+            catch (Exception ex)
+            {
+                GetDeepestMessage(ex);
+                _Logger.LogError("Exception" + ex.Message, ex, activityId);
+                throw (new Exception("Exception" + ex.Message));
+
+            }
 
         }
-        public async Task<List<Employee>> GetAllEmployees()
+        public async Task DeleteEmployee(int id, Guid activityId)
         {
-            //return await _context.Employee.Where(e => e.Delete == 0).ToListAsync();
-            var result = await _context.Employee
-                .FromSqlInterpolated($"EXEC GetAllEmployees")
-                .ToListAsync();
-            return result.ToList();
+            _Logger.LogInformation("delete Employee Repository started.", activityId);
+            try
+            {
+                await _context.Database.ExecuteSqlInterpolatedAsync($@"EXEC DeleteEmployee @id={id}");
+                _Logger.LogInformation("delete Employee Repository Completed.", activityId);
+            }
+            catch (Exception ex)
+            {
+                GetDeepestMessage(ex);
+                _Logger.LogError("Exception" + ex.Message, ex, activityId);
+                throw (new Exception("Exception" + ex.Message));
+
+            }
+
+        }
+        public async Task<List<Employee>> GetAllEmployees(Guid activityId)
+        {
+            _Logger.LogInformation("Get all Employee Repository started.", activityId);
+            try
+            {
+                var result = await _context.Employee
+                    .FromSqlInterpolated($"EXEC GetAllEmployees")
+                    .ToListAsync();
+                _Logger.LogInformation("Get all Employee Repository Completed.", activityId);
+                return result.ToList();
+            }
+            catch (Exception ex)
+            {
+                GetDeepestMessage(ex);
+                _Logger.LogError("Exception" + ex.Message, ex, activityId);
+                throw (new Exception("Exception" + ex.Message));
+
+            }
         }
     }
 }

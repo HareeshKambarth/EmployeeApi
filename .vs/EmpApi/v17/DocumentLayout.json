@@ -3,44 +3,52 @@
   "WorkspaceRootPath": "D:\\Projects\\Git\\EmpApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\logging\\iloggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\logging\\iloggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\logs\\log20250723.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\logs\\log20250723.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\repository\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\repository\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\empapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\empapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\logging\\loggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\logging\\loggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\logging\\iloggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\logging\\iloggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\repository\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\repository\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\logs\\log20250722.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\logs\\log20250722.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\empapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\empapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\logs\\log20250721.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -49,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|solutionrelative:empapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}|EmpApi\\EmpApi.csproj|d:\\projects\\git\\empapi\\empapi\\data\\empdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,11 +70,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "log20250723.json",
+              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Logs\\log20250723.json",
+              "RelativeDocumentMoniker": "EmpApi\\Logs\\log20250723.json",
+              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Logs\\log20250723.json",
+              "RelativeToolTip": "EmpApi\\Logs\\log20250723.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-23T10:32:03.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Repository\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "EmpApi\\Repository\\EmployeeRepository.cs",
+              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Repository\\EmployeeRepository.cs",
+              "RelativeToolTip": "EmpApi\\Repository\\EmployeeRepository.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAcwJIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T07:20:14.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Repository\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "EmpApi\\Repository\\IEmployeeRepository.cs",
+              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Repository\\IEmployeeRepository.cs",
+              "RelativeToolTip": "EmpApi\\Repository\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T06:23:49.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "EmpApi\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "EmpApi\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T13:12:26.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoggingService.cs",
+              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Logging\\LoggingService.cs",
+              "RelativeDocumentMoniker": "EmpApi\\Logging\\LoggingService.cs",
+              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Logging\\LoggingService.cs",
+              "RelativeToolTip": "EmpApi\\Logging\\LoggingService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBIAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T11:13:27.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Services\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "EmpApi\\Services\\IEmployeeService.cs",
+              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Services\\IEmployeeService.cs",
+              "RelativeToolTip": "EmpApi\\Services\\IEmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T07:27:13.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Program.cs",
+              "RelativeDocumentMoniker": "EmpApi\\Program.cs",
+              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Program.cs",
+              "RelativeToolTip": "EmpApi\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwGMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T12:59:19.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\appsettings.json",
+              "RelativeDocumentMoniker": "EmpApi\\appsettings.json",
+              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\appsettings.json",
+              "RelativeToolTip": "EmpApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-17T12:56:23.537Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -87,7 +195,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "EmpApi\\Services\\EmployeeService.cs",
+              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "EmpApi\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T07:28:53.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "log20250722.json",
+              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Logs\\log20250722.json",
+              "RelativeDocumentMoniker": "EmpApi\\Logs\\log20250722.json",
+              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Logs\\log20250722.json",
+              "RelativeToolTip": "EmpApi\\Logs\\log20250722.json",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-23T14:07:45.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "EmpApi.csproj",
               "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\EmpApi.csproj",
               "RelativeDocumentMoniker": "EmpApi\\EmpApi.csproj",
@@ -95,115 +229,11 @@
               "RelativeToolTip": "EmpApi\\EmpApi.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-23T11:05:35.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T11:05:35.454Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "log20250723.json",
-              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Logs\\log20250723.json",
-              "RelativeDocumentMoniker": "EmpApi\\Logs\\log20250723.json",
-              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Logs\\log20250723.json",
-              "RelativeToolTip": "EmpApi\\Logs\\log20250723.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-23T10:32:03.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EmployeeService.cs",
-              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Services\\EmployeeService.cs",
-              "RelativeDocumentMoniker": "EmpApi\\Services\\EmployeeService.cs",
-              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Services\\EmployeeService.cs",
-              "RelativeToolTip": "EmpApi\\Services\\EmployeeService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAQwCUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T07:28:53.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Repository\\EmployeeRepository.cs",
-              "RelativeDocumentMoniker": "EmpApi\\Repository\\EmployeeRepository.cs",
-              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Repository\\EmployeeRepository.cs",
-              "RelativeToolTip": "EmpApi\\Repository\\EmployeeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T07:20:14.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IEmployeeRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Repository\\IEmployeeRepository.cs",
-              "RelativeDocumentMoniker": "EmpApi\\Repository\\IEmployeeRepository.cs",
-              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Repository\\IEmployeeRepository.cs",
-              "RelativeToolTip": "EmpApi\\Repository\\IEmployeeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T06:23:49.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Program.cs",
-              "RelativeDocumentMoniker": "EmpApi\\Program.cs",
-              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Program.cs",
-              "RelativeToolTip": "EmpApi\\Program.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAGIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T12:59:19.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "EmpApi\\Controllers\\EmployeeController.cs",
-              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "EmpApi\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T13:12:26.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoggingService.cs",
-              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Logging\\LoggingService.cs",
-              "RelativeDocumentMoniker": "EmpApi\\Logging\\LoggingService.cs",
-              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Logging\\LoggingService.cs",
-              "RelativeToolTip": "EmpApi\\Logging\\LoggingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:13:27.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IEmployeeService.cs",
-              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Services\\IEmployeeService.cs",
-              "RelativeDocumentMoniker": "EmpApi\\Services\\IEmployeeService.cs",
-              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Services\\IEmployeeService.cs",
-              "RelativeToolTip": "EmpApi\\Services\\IEmployeeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T07:27:13.3Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "log20250721.txt",
               "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Logs\\log20250721.txt",
               "RelativeDocumentMoniker": "EmpApi\\Logs\\log20250721.txt",
@@ -215,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "EmpApi\\Models\\Employee.cs",
@@ -227,19 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\appsettings.json",
-              "RelativeDocumentMoniker": "EmpApi\\appsettings.json",
-              "ToolTip": "D:\\Projects\\Git\\EmpApi\\EmpApi\\appsettings.json",
-              "RelativeToolTip": "EmpApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-17T12:56:23.537Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "EmpDbContext.cs",
               "DocumentMoniker": "D:\\Projects\\Git\\EmpApi\\EmpApi\\Data\\EmpDbContext.cs",
               "RelativeDocumentMoniker": "EmpApi\\Data\\EmpDbContext.cs",
