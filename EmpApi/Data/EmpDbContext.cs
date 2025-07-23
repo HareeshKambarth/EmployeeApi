@@ -9,5 +9,6 @@ namespace EmpApi.Data
         {
         }
         public DbSet<Employee> Employee { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

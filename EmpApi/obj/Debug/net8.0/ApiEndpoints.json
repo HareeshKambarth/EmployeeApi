@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "EmpApi.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "EmpApi.DTOs.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EmpApi.Controllers.EmployeeController",
     "Method": "AddEmployee",
     "RelativePath": "api/Employee",

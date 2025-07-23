@@ -1,9 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
-using EmpApi.Data;
+﻿using EmpApi.Data;
 using EmpApi.Models;
 using EmpApi.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace EmpApi.Controllers
 {
@@ -35,7 +36,7 @@ namespace EmpApi.Controllers
             return ex.Message.Trim();
         }
 
-
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<Employee>> AddEmployee(Employee employee)
         {
@@ -55,7 +56,7 @@ namespace EmpApi.Controllers
                 throw (new Exception("Exception" + ex.Message));
             }
         }
-
+        [Authorize]
         [HttpPut]
         public async Task<ActionResult<Employee>> UpdateEmployee(Employee employee)
         {
@@ -84,7 +85,7 @@ namespace EmpApi.Controllers
 
 
         }
-
+        [Authorize]
         [HttpPut("{id}/status")]
         public async Task<ActionResult<Employee>> UpdateEmployeeStatus(int id, int status)
         {
@@ -106,6 +107,7 @@ namespace EmpApi.Controllers
             }
 
         }
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult<Employee>> GetEmployees(int id)
         {
@@ -126,8 +128,8 @@ namespace EmpApi.Controllers
 
 
         }
-      
 
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<ActionResult<Employee>> DeleteEmployee(int id)
         {
@@ -149,6 +151,7 @@ namespace EmpApi.Controllers
             }
 
         }
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Employee>>> GetAllEmployees()
         {
