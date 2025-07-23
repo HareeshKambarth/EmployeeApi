@@ -1,5 +1,6 @@
 using EmpApi;
 using EmpApi.Data;
+using EmpApi.Logging;
 using EmpApi.Repository;
 using EmpApi.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -11,6 +12,7 @@ using Serilog.Events;
 using Serilog.Formatting.Json;
 using System.Reflection;
 using System.Text;
+using EmpApi.Logging;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -90,6 +92,7 @@ builder.Services.AddAuthentication(options =>
             Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
     };
 });
+builder.Services.AddScoped<ILoggingService, LoggingService>();
 
 var app = builder.Build();
 
