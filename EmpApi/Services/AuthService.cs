@@ -17,19 +17,14 @@ public class AuthService : IAuthService
 
     public async Task<string> Authenticate(string username, string password)
     {
-        var user = await _authRepository.GetUserByUsernameAsync(username);
-
-        //Console.WriteLine(user.Username);
-        //Console.WriteLine(user.Password);
-        //Console.WriteLine(password);
-        ////if(user.Password.Trim().Equals(password.Trim())) Console.WriteLine("Password match");
-        //else Console.WriteLine("Password mismatch");
+        var user = await _authRepository.GetUserByUsernameAsync(username);       
+       
         if (user.Username == null || user.Password.Trim() != password.Trim())
             return null;
 
         var tokenHandler = new JwtSecurityTokenHandler();
         var key = Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]);
-        //Console.WriteLine("User not null");
+       
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = new ClaimsIdentity(new[] {
@@ -42,7 +37,7 @@ public class AuthService : IAuthService
         };
 
         var token = tokenHandler.CreateToken(tokenDescriptor);
-        //Console.WriteLine(token);
+       
         return tokenHandler.WriteToken(token);
     }
 }

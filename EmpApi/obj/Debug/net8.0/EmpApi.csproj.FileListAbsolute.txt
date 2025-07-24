@@ -211,3 +211,4 @@ D:\Projects\Git\EmpApi\EmpApi\obj\Debug\net8.0\refint\EmpApi.dll
 D:\Projects\Git\EmpApi\EmpApi\obj\Debug\net8.0\EmpApi.pdb
 D:\Projects\Git\EmpApi\EmpApi\obj\Debug\net8.0\EmpApi.genruntimeconfig.cache
 D:\Projects\Git\EmpApi\EmpApi\obj\Debug\net8.0\ref\EmpApi.dll
+D:\Projects\Git\EmpApi\EmpApi\bin\Debug\net8.0\Logs\log20250724.json

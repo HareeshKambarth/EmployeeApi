@@ -16,13 +16,7 @@ namespace EmpApi.Controllers
         
         //Logging
         private readonly ILoggingService _Logger;
-
-        //private readonly EmpDbContext _context;
-        //public EmployeeController(EmpDbContext context, ILogger<EmployeeController> logger)
-        //{
-        //    _context = context;
-        //    Logger = logger;
-        //}
+        
         private readonly IEmployeeService _employeeService;
         public EmployeeController(IEmployeeService employeeService, ILoggingService logger)
         {
@@ -39,14 +33,27 @@ namespace EmpApi.Controllers
 
         [Authorize]
         [HttpPost]
-        public async Task<ActionResult<Employee>> AddEmployee(Employee employee)
+        public async Task<ActionResult<Employee>> AddEmployee([FromBody]Employee employee)
         {
             var activityId = Guid.NewGuid();
             _Logger.LogInformation("Adding Employee started.", activityId);
             try
             {
-                //_context.Employee.Add(employee);
-                //await _context.SaveChangesAsync();
+
+                // User input sanitization
+                employee.Name = InputSanitizer.Sanitize(employee.Name);
+                employee.Address = InputSanitizer.Sanitize(employee.Address);
+                employee.Email = InputSanitizer.Sanitize(employee.Email);
+                if (ModelState.IsValid == false)
+                {
+                    _Logger.LogInformation("Model state is invalid.", activityId);
+                    return BadRequest(ModelState);
+                }
+                if (employee.Name == null || employee.Address == null || employee.Email == null)
+                {
+                    _Logger.LogInformation("Fields cannot be null", activityId);
+                    return BadRequest();
+                }
                 await _employeeService.AddEmployee(employee, activityId);
                 _Logger.LogInformation($"Adding Employee completed. Employee Id: {employee.Id}", activityId);
                 return Ok();
@@ -66,15 +73,17 @@ namespace EmpApi.Controllers
             _Logger.LogInformation("Update Employee started.", activityId);
             try
             {
-                //var emp = await _context.Employee.FindAsync(employee.Id);
+                // User input sanitization
+                employee.Name = InputSanitizer.Sanitize(employee.Name);
+                employee.Address = InputSanitizer.Sanitize(employee.Address);
+                employee.Email = InputSanitizer.Sanitize(employee.Email);
+                if (ModelState.IsValid == false)
+                {
+                    _Logger.LogInformation("Model state is invalid.", activityId);
+                    return BadRequest(ModelState);
+                }
                 await _employeeService.UpdateEmployee(employee, activityId);
-                //emp.Name = employee.Name;
-                //emp.Address = employee.Address;
-                //emp.Email = employee.Email;
-                //emp.RegistrationDate = employee.RegistrationDate;
-                //emp.ActiveStatus = employee.ActiveStatus;
-                //emp.Delete = employee.Delete;
-                //await _context.SaveChangesAsync();
+                
                 _Logger.LogInformation($"Update Employee completed. Employee Id: {employee.Id}", activityId);
                 return Ok();
             }
@@ -96,9 +105,7 @@ namespace EmpApi.Controllers
             _Logger.LogInformation("Update Employee Status started.", activityId);
             try
             {
-                //var emp = await _context.Employee.FindAsync(id);
-                //emp.ActiveStatus = status;
-                //await _context.SaveChangesAsync();
+               
                 await _employeeService.UpdateEmployeeStatus(id, status, activityId);
                 _Logger.LogInformation($"Update Employee Status completed. Employee Id: {id}", activityId);
                 return Ok();
@@ -142,9 +149,7 @@ namespace EmpApi.Controllers
             _Logger.LogInformation("Soft delete Employee started.", activityId);
             try
             {
-                //var emp = await _context.Employee.FindAsync(id);
-                //emp.Delete = 1;
-                //await _context.SaveChangesAsync();
+                
                 await _employeeService.DeleteEmployee(id, activityId);
                 _Logger.LogInformation($"Soft delete Employee completed. Employee Id: {id}", activityId);
                 return Ok();
@@ -165,7 +170,7 @@ namespace EmpApi.Controllers
             _Logger.LogInformation("Get non deleted Employee started.", activityId);
             try
             {
-                //var employees = await _context.Employee.Where(e => e.Delete == 0).ToListAsync();
+                
                 var employees = await _employeeService.GetAllEmployees(activityId);
                 _Logger.LogInformation("Get all Employee services completed.", activityId);
                 _Logger.LogInformation("Get non deleted Employee complted.", activityId);
