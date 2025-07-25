@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36221.1 d17.14
+VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpApi", "EmpApi\EmpApi.csproj", "{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpApiTest", "EmpApiTest\EmpApiTest.csproj", "{4A405390-A97C-4A29-B526-E7DFD31E92F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABB27C5B-EF51-477F-84E2-7C6F5B4EC1FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A405390-A97C-4A29-B526-E7DFD31E92F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A405390-A97C-4A29-B526-E7DFD31E92F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A405390-A97C-4A29-B526-E7DFD31E92F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A405390-A97C-4A29-B526-E7DFD31E92F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
